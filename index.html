@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu bản thân - Tạ Thị Tố Oanh</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+            background-image: radial-gradient(circle at 15% 20%, #ffdde1 0%, transparent 45%),
+                              radial-gradient(circle at 85% 80%, #c2e9fb 0%, transparent 50%);
+            padding: 20px;
+            color: #2d3748;
+        }
+        .profile-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(12px);
+            border-radius: 24px;
+            box-shadow: 0 20px 50px rgba(31, 38, 135, 0.12);
+            max-width: 480px;
+            width: 100%;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            transition: transform 0.3s ease;
+        }
+        .profile-card:hover {
+            transform: translateY(-4px);
+        }
+        .cover {
+            height: 130px;
+            background: linear-gradient(120deg, #ff758c 0%, #ff7eb3 50%, #7f7fd5 100%);
+        }
+        .avatar-wrapper {
+            display: flex;
+            justify-content: center;
+            margin-top: -58px;
+        }
+        .avatar {
+            width: 116px;
+            height: 116px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 38px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            border: 5px solid #ffffff;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        }
+        .card-body {
+            padding: 20px 30px 32px;
+            text-align: center;
+        }
+        .name {
+            font-size: 26px;
+            font-weight: 700;
+            color: #1a202c;
+            margin-bottom: 6px;
+        }
+        .major-badge {
+            display: inline-block;
+            background: #eef2ff;
+            color: #4f46e5;
+            font-weight: 600;
+            font-size: 14px;
+            padding: 6px 14px;
+            border-radius: 999px;
+            margin-bottom: 22px;
+        }
+        .info-list {
+            background: #f8fafc;
+            border-radius: 16px;
+            padding: 16px 20px;
+            text-align: left;
+            margin-bottom: 22px;
+            border: 1px solid #edf2f7;
+        }
+        .info-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px dashed #e2e8f0;
+            font-size: 15px;
+        }
+        .info-item:last-child {
+            border-bottom: none;
+        }
+        .info-label {
+            color: #718096;
+            font-weight: 500;
+        }
+        .info-value {
+            color: #2d3748;
+            font-weight: 600;
+        }
+        .hobbies-title {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #718096;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+        .hobbies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .hobby-tag {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 9px 14px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #334155;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+            transition: all 0.2s ease;
+        }
+        .hobby-tag:hover {
+            border-color: #ff7eb3;
+            background: #fff5f8;
+            transform: scale(1.04);
+        }
+        .greeting-btn {
+            margin-top: 24px;
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 12px;
+            background: linear-gradient(120deg, #ff758c 0%, #7f7fd5 100%);
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 6px 18px rgba(127, 127, 213, 0.3);
+            transition: opacity 0.2s ease;
+        }
+        .greeting-btn:hover {
+            opacity: 0.92;
+        }
+        #toast {
+            margin-top: 12px;
+            font-size: 14px;
+            color: #4f46e5;
+            font-weight: 500;
+            min-height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <article class="profile-card">
+        <div class="cover"></div>
+        <div class="avatar-wrapper">
+            <div class="avatar" aria-hidden="true">TO</div>
+        </div>
+        <div class="card-body">
+            <h1 class="name">Tạ Thị Tố Oanh</h1>
+            <span class="major-badge">Thương mại điện tử – K19</span>
+
+            <div class="info-list">
+                <div class="info-item">
+                    <span class="info-label">Họ và tên</span>
+                    <span class="info-value">Tạ Thị Tố Oanh</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Ngày sinh</span>
+                    <span class="info-value">11/11/2007</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Ngành học</span>
+                    <span class="info-value">Thương mại điện tử – K19</span>
+                </div>
+            </div>
+
+            <div class="hobbies-title">Sở thích cá nhân</div>
+            <div class="hobbies">
+                <span class="hobby-tag">🎬 Xem phim</span>
+                <span class="hobby-tag">🎧 Nghe nhạc</span>
+                <span class="hobby-tag">🎮 Chơi game</span>
+            </div>
+
+            <button class="greeting-btn" id="helloBtn">Gửi lời chào 👋</button>
+            <p id="toast"></p>
+        </div>
+    </article>
+
+    <script>
+        document.getElementById("helloBtn").addEventListener("click", function () {
+            const toast = document.getElementById("toast");
+            toast.textContent = "Xin chào! Rất vui được làm quen với bạn ✨";
+        });
+    </script>
+</body>
+</html>
